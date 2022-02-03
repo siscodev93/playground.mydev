@@ -10,7 +10,11 @@ module.exports = {
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif']
       },
-      extend: {},
+      extend: {
+          backgroundImage:{
+              'hero-bg': "url('../images/header.jpg')"
+          }
+      },
     },
     plugins: [],
   }

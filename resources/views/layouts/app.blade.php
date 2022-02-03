@@ -12,7 +12,10 @@
 
     <link rel="stylesheet" href="{{ url('css/app.css') }}">
 </head>
-<body class='min-h-full min-w-full font-montserrat'>
+<body class='h-screen w-full font-montserrat'>
     @include('partials.navigation-top')
+
+    @yield('content')
+    </header>
 </body>
 </html>

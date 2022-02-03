@@ -4,6 +4,12 @@ module.exports = {
       "./resources/**/*.js"
     ],
     theme: {
+      container: {
+        padding: '2em'
+      },
+      fontFamily: {
+        'montserrat': ['Montserrat', 'sans-serif']
+      },
       extend: {},
     },
     plugins: [],

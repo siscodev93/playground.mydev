@@ -22,6 +22,10 @@ Route::get('/account/login', function () {
     return view('account.login');
 })->name('account.login');
 
+Route::get('/account/register', function () {
+    return view('account.register');
+})->name('account.register');
+
 Route::get('/account/dashboard', function () {
     return view('account.dashboard');
 })->name('account.dashboard');

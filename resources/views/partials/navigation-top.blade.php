@@ -1,4 +1,4 @@
-<nav class='flex items-center p-3 bg-blue-700 text-white shadow-lg fixed w-full'>
+<nav class='flex items-center p-3 bg-slate-700 text-white shadow-lg fixed w-full'>
 
     <div class="w-full mx-10 flex flex-row justify-between items-center">
         <a href="#" class='font-bold text-xl'>MyPlayground</a>

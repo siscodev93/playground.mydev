@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+
+Route::get('/account/login', function () {
+    return view('account.login');
+})->name('account.login');
+
+Route::get('/account/dashboard', function () {
+    return view('account.dashboard');
+})->name('account.dashboard');

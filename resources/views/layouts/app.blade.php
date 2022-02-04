@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="{{ url('css/app.css') }}">
 </head>
 <body class='h-screen w-full font-montserrat'>
-    @include('partials.navigation-top')
 
     @yield('content')
     </header>

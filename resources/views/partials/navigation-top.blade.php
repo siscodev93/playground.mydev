@@ -7,7 +7,13 @@
             <a href="#" class='px-4 py-2'>About</a>
             <a href="#" class='px-4 py-2'>Services</a>
             <a href="#" class='px-4 py-2'>Contact Us</a>
-            <a href="#" class='border-white border rounded-lg px-4 py-2' >Account</a>
+
+            @if(Route::has('account.login') && auth()->guest())
+                <a href="{{ route('account.login') }}" class='border-white border rounded-lg px-4 py-2 transition duration-300 hover:bg-white hover:text-slate-800' >Account</a>
+            @elseif(Route::has('login') && ! auth()->guest())
+                <a href="{{ route('account.dashboard') }}" class='border-white border rounded-lg px-4 py-2 transition duration-300 hover:bg-white hover:text-slate-800' >My Account</a>
+            @endif
+
         </div>
     </div>
 </nav>
